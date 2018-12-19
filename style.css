@@ -8,10 +8,31 @@ div {
   margin-top: 15px;
 }
 
-.image-section {
+.image0-section {
   display: flex;
   justify-content: center;
+	position: absolute;
+}
 
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image2 {
+  position: relative;
+	top: 0;
+  left: 0;
+}
+.image3 {
+  position: relative;
+	top: 0;
+  left: 0;
 }
 
 .section-style {
