@@ -14,8 +14,8 @@
       $("#show").click(function(){
         $(".image3").show();
       });
-    });                             //
-      </script>
+    });
+    </script>
   </head>
   <style>
   h1 {
@@ -24,6 +24,7 @@
   h4 {
     color: white;
   }
+
   </style>
   <body>
     <h1>I wonder why the Timberwolves can't make the play-offs?</h1>
@@ -42,15 +43,28 @@
         <p>When the drama kicks in..</p>
       </div>
 
-    <div class='image3'>
+    <div  class='image3'>
         <div class='section-style'>
-          <img src="https://sotasports.files.wordpress.com/2012/04/newlogo.png" width="400" height="400" alt="How it feels being a fan..">
+          <img src="https://sotasports.files.wordpress.com/2012/04/newlogo.png" style = "width:400px;height:400px;" alt="How it feels being a fan..">
           <p>How it feels being a fan..</p>
         </div>
       </div>
 
       <button id="hide">Hide</button>
       <button id="show">Show</button>
+
+    <script>
+    var image3 = document.getElementsByClassName('section-style');
+    function anim(e) {
+      //alert(e.keyCode); //check what key codes
+      var left = 0;
+     if(e.keyCode == 39) {
+        left += 2;
+        image3.margin-right = 100+'px';
+      }
+    }
+    document.onkeydown = anim;
+    </script>
 
   </body>
 </html>
