@@ -20,23 +20,12 @@ img {
   top: 100;
   left: 0;
 }
-.image1 {
+.image {
   position: relative;
   top: 0;
   left: 0;
 }
-.image2 {
-  position: relative;
-	top: 0;
-  left: 0;
-}
-.image3 {
-  position: relative;
-	top: 0;
-  left: 0;
 
-
-}
 
 .section-style {
   margin-right: 500px;
