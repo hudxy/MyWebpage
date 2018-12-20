@@ -1,6 +1,6 @@
 
 
-document.getElementById('date').innerHTML = new Date().toDateString();
+//document.getElementById('date').innerHTML = new Date().toDateString();
 
 $(document).ready(function(){
   $("#hide").click(function(){
@@ -20,6 +20,7 @@ $(document).keydown(function(e) {
         });
         break;
     case 38:
+        $('.image3').background
         $('.image3').animate({
             top: '-=50px'
         });
