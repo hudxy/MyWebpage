@@ -1,11 +1,38 @@
+
+
 document.getElementById('date').innerHTML = new Date().toDateString();
 
-var image3 = $(".image3");
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".image3").hide();
+    });
+  $("#show").click(function(){
+    $(".image3").show();
+  });
+});
 
 
-function move(e) {
-
-  if(e.keyCode == 40) {
-    image3 =width:400px;height:800px;
-  }
-}
+$(document).keydown(function(e) {
+    switch (e.which) {
+    case 37:
+        $('.image3').animate({
+            left: '-=50px'
+        });
+        break;
+    case 38:
+        $('.image3').animate({
+            top: '-=50px'
+        });
+        break;
+    case 39:
+        $('.image3').animate({
+            left: '+=50px'
+        });
+        break;
+    case 40:
+        $('.image3').animate({
+            top: '+=50px'
+        });
+        break;
+    }
+})

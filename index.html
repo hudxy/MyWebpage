@@ -6,16 +6,7 @@
 		<script async src = './index.js'></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-      $("#hide").click(function(){
-        $(".image3").hide();
-        });
-      $("#show").click(function(){
-        $(".image3").show();
-      });
-    });
-    </script>
+
   </head>
   <style>
   h1 {
@@ -33,38 +24,29 @@
 
     <div class='image1'>
       <div class='section-style'>
-        <img src="http://basket-infos.com/wp-content/uploads/2017/09/karl-anthony-towns-andrew-wiggins-jimmy-butler-min.jpg" width="800" height="400" alt="The squad had so much promise..">
+        <img src="http://basket-infos.com/wp-content/uploads/2017/09/karl-anthony-towns-andrew-wiggins-jimmy-butler-min.jpg" width="800" height="400" alt="The squad had so much promise.."/>
         <p>The squad had so much promise..</p>
       </div>
-
+</div>
   <div class='image2'>
       <div class='section-style'>
-        <img src="https://i.kinja-img.com/gawker-media/image/upload/s--j6nRMwLv--/c_scale,fl_progressive,q_80,w_800/1273904887528836642.jpg" alt="When the drama kicks in..">
+        <img src="https://i.kinja-img.com/gawker-media/image/upload/s--j6nRMwLv--/c_scale,fl_progressive,q_80,w_800/1273904887528836642.jpg" alt="When the drama kicks in.."/>
         <p>When the drama kicks in..</p>
       </div>
-
+</div>
     <div  class='image3'>
         <div class='section-style'>
-          <img src="https://sotasports.files.wordpress.com/2012/04/newlogo.png" style = "width:400px;height:400px;" alt="How it feels being a fan..">
+          <img src="https://sotasports.files.wordpress.com/2012/04/newlogo.png" style = "width:400px;height:400px;" alt="How it feels being a fan.."/>
           <p>How it feels being a fan..</p>
         </div>
-      </div>
+        </div>
+
 
       <button id="hide">Hide</button>
       <button id="show">Show</button>
 
-    <script>
-    var image3 = document.getElementsByClassName('section-style');
-    function anim(e) {
-      //alert(e.keyCode); //check what key codes
-      var left = 0;
-     if(e.keyCode == 39) {
-        left += 2;
-        image3.margin-right = 100+'px';
-      }
-    }
-    document.onkeydown = anim;
-    </script>
+      </div>
+
 
   </body>
 </html>
