@@ -37,6 +37,29 @@ $(document).keydown(function(e) {
     }
 })
 
-setTimeout(function(){ $("#image1").hide(); }, 3000);
-setTimeout(function(){ $("#image2").hide(); }, 4000);
-setTimeout(function(){ $("#image3").hide(); }, 5000);
+
+
+var image1 = document.getElementById('image1');
+var image2 = document.getElementById('image2');
+var image3 = document.getElementById('image3');
+//image1.style.visibility = 'hidden';
+
+function showHide(h) {
+  if(getComputedStyle(h).visibility == 'visible') {
+    h.style.visibility = 'hidden';
+  } else if(getComputedStyle(h).visibility == 'hidden') {
+    h.style.visibility = 'visible';
+  }
+}
+
+
+setInterval(showHide, 3000, image1);
+setInterval(showHide, 4000, image2);
+setInterval(showHide, 5000, image3);
+
+
+
+//Hide images after so many milliseconds
+//setTimeout(function(){ $("#image1").hide(); }, 3000);
+//setTimeout(function(){ $("#image2").hide(); }, 4000);
+//setTimeout(function(){ $("#image3").hide(); }, 5000);
