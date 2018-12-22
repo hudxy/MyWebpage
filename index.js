@@ -52,10 +52,19 @@ function showHide(h) {
   }
 }
 
+//Create new Event
+//var event = new CustomEvent('myEvent', {'detail': 'Example event'});
 
-setInterval(showHide, 3000, image1);
-setInterval(showHide, 4000, image2);
-setInterval(showHide, 5000, image3);
+
+
+image1.addEventListener('click', function(){showHide(image1);});
+image2.addEventListener('click', function() {showHide(image2)});
+image3.addEventListener('click', function() {showHide(image3)});
+
+setInterval(function(){$('#image1').trigger('click');}, 3000);
+setInterval(function(){$('#image2').trigger('click');}, 4000);
+setInterval(function(){$('#image3').trigger('click');}, 5000);
+
 
 
 
