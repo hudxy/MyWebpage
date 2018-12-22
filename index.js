@@ -57,9 +57,9 @@ function showHide(h) {
 
 
 
-image1.addEventListener('click', function(){showHide(image1);});
-image2.addEventListener('click', function() {showHide(image2)});
-image3.addEventListener('click', function() {showHide(image3)});
+image1.addEventListener('click', function() {showHide(image1);});
+image2.addEventListener('click', function() {showHide(image2);});
+image3.addEventListener('click', function() {showHide(image3);});
 
 setInterval(function(){$('#image1').trigger('click');}, 3000);
 setInterval(function(){$('#image2').trigger('click');}, 4000);
